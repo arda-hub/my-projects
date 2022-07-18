@@ -1,48 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/arda-logo.png" width="150" /></a>
 
-    <a class="navbar-brand" href="#"><img src="assets/images/arda1.png" width="150"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="collapse navbar-collapse float-end" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login"> Home</a>
+                </li>
 
-        <span class="navbar-toggler-icon"></span>
-
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-
-                <a class="nav-link" routerLink="/login"> Home</a>  </li>
-
-        <li class="nav-item">
-
+                <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
+                </li>
 
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
 
-            <li class="nav-item">
-
-                <a class="nav-link" href="#">Services</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <nav>
-
-                    <a class="nav-link" href="#" routerLink="/login" routerLinkActive="active">Login</a>
-                </nav>
-
-            </li>
-
-        </ul>
-
+                <li class="nav-item">
+                    <nav>
+                        <a class="nav-link" href="#" routerLink="/login" routerLinkActive="active">Login</a>
+                    </nav>
+                </li>
+            </ul>
+        </div>
     </div>
-
-</div>
-
 </nav>

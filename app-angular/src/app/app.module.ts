@@ -5,20 +5,22 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
+import { NavbarModule } from './navbar/navbar.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    NavbarComponent,
+    AppComponent,NavbarComponent,LoginComponent
 
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
+    RouterModule, ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
