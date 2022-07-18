@@ -10,7 +10,19 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  
+contactForm = new FormGroup({
+  firstName: new FormControl(),
+  email: new FormControl(),
+  phone: new FormControl(),
+  password: new FormControl(),
+  repeatPassword: new FormControl(),
+
+})
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    console.log(this.contactForm.value);
+  }
 }
